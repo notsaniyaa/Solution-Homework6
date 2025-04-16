@@ -29,19 +29,52 @@ Each handler can:
 ## Project 2: Smart Home Remote Control (Command Pattern)
 
 ### Description
-A smart home simulation where a remote control triggers commands for smart devices like lights and thermostats.
+The Command pattern encapsulates requests as objects, allowing for decoupling between the invoker and the receiver, as well as support for undo, redo, and macro actions.
+
+This project models a smart home remote control system:
+
+Lights
+
+Thermostat
+
+Door locks
+
+Each button on the remote represents a command that can be executed and undone.
+
+### Structure
+**Interfaces**
+
+Command — interface with execute() and undo() methods
+
+**Invoker**
+
+SmartHomeRemoteControl — stores command slots and handles execution
+
+**Devices (Receivers)**
+
+Light, Thermostat, DoorLock
+
+**Concrete Commands**
+
+TurnOnLightCommand
+
+TurnOffLightCommand
+
+SetThermostatCommand
+
+LockDoorsCommand
+
+### Bonus: Macro Commands
+MacroCommand — accepts a list of commands and executes them as one
+
+Example: Goodnight Mode turns off the lights, lowers the temperature, and locks the doors
 
 ### Design Pattern
 - **Command Pattern** — decouples the object that invokes an operation from the one that knows how to perform it.
 
-### Structure
-
-### Features
-- Execute and undo commands
-- Assign commands dynamically to slots
-
 ### Run
-![image](https://github.com/user-attachments/assets/f79b22de-f690-46db-a042-090560bced31)
+![image](https://github.com/user-attachments/assets/eef1f733-f88b-42d1-a080-39e3a49fa0ef)
+
 
 
 
