@@ -33,11 +33,11 @@ The Command pattern encapsulates requests as objects, allowing for decoupling be
 
 This project models a smart home remote control system:
 
-Lights
+- Lights
 
-Thermostat
+-Thermostat
 
-Door locks
+- Door locks
 
 Each button on the remote represents a command that can be executed and undone.
 
@@ -48,21 +48,21 @@ Command — interface with execute() and undo() methods
 
 **Invoker**
 
-SmartHomeRemoteControl — stores command slots and handles execution
+- SmartHomeRemoteControl — stores command slots and handles execution
 
 **Devices (Receivers)**
 
-Light, Thermostat, DoorLock
+- Light, Thermostat, DoorLock
 
 **Concrete Commands**
 
-TurnOnLightCommand
+- TurnOnLightCommand
 
-TurnOffLightCommand
+- TurnOffLightCommand
 
-SetThermostatCommand
+- SetThermostatCommand
 
-LockDoorsCommand
+- LockDoorsCommand
 
 ### Bonus: Macro Commands
 MacroCommand — accepts a list of commands and executes them as one
