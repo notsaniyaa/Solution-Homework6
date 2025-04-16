@@ -11,7 +11,6 @@ public class SupportSystem {
                 new SeniorSupportHandler()
         );
 
-        // Связываем цепочку обработчиков динамически
         for (int i = 0; i < handlers.size() - 1; i++) {
             handlers.get(i).setNext(handlers.get(i + 1));
         }
